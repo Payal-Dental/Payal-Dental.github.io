@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Bhalodia | Dental Hygiene Services</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #e0f2fe 0%, #ffffff 50%),
+                        radial-gradient(circle at bottom left, #dcfce7 0%, #ffffff 50%);
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            filter: blur(80px);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            z-index: -1;
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(0, 0); }
+            to { transform: translate(100px, 100px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <div class="blob top-0 left-0"></div>
+    <div class="blob bottom-0 right-0" style="animation-delay: -5s;"></div>
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="font-extrabold text-2xl text-blue-600 tracking-tighter">PB<span class="text-slate-400">.DENTAL</span></div>
+        <a href="tel:7038264835" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+            Call Now
+        </a>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6 hero-gradient">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right">
+                    <div data-aos="fade-up" class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold mb-6">
+                        ✨ NOW ACCEPTING NEW PATIENTS IN SPRINGFIELD
+                    </div>
+                    <h1 data-aos="fade-up" data-aos-delay="100" class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                        Premium Dental Care <br><span class="text-blue-600">Without the Premium Price.</span>
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-lg text-slate-600 mb-10">
+                        I'm Payal Bhalodia, a Dental Hygiene student at NOVA. I provide professional-grade dental care including comprehensive oral exams, thorough cleaning, X-rays, cancer screening, and more—all for just $35. Quality oral health care, student pricing.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4">
+                        <a href="#booking" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-transform text-center">Book Appointment</a>
+                        <a href="#services" class="bg-white px-10 py-4 rounded-2xl font-bold text-lg border border-slate-200 hover:bg-slate-50 transition-colors text-center">View Services</a>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="flex justify-center">
+                    <img src="Payal proile pic.JPG" alt="Payal Bhalodia" class="w-full max-w-2xl h-96 rounded-full object-cover shadow-2xl border-4 border-blue-100">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="px-6 -mt-10 relative z-10">
+        <div data-aos="zoom-in" class="max-w-4xl mx-auto bg-blue-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-3xl font-bold">The Student Rate</h2>
+                <p class="text-blue-100 italic">One-time payment for all included treatments.</p>
+            </div>
+            <div class="text-center">
+                <span class="text-blue-300 line-through text-2xl mr-2">$200+</span>
+                <span class="text-6xl font-black">$35</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">What's Included?</h2>
+            <p class="text-slate-500">Everything you need for a healthy, glowing smile.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div data-aos="fade-up" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-tooth text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Professional Cleaning</h3>
+                <p class="text-slate-500 text-sm">Professional scaling and polishing to remove plaque and tartar.</p>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-x-ray text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Full X-Rays</h3>
+                <p class="text-slate-500 text-sm">Complete diagnostic imaging to catch issues before they start.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-shield-alt text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Cancer Screening</h3>
+                <p class="text-slate-500 text-sm">Comprehensive oral cancer screening included in every visit.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-microscope text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Comprehensive Exams</h3>
+                <p class="text-slate-500 text-sm">Thorough dental examination to assess your oral health.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-droplet text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Fluoride Treatment</h3>
+                <p class="text-slate-500 text-sm">Strengthens enamel and helps prevent tooth decay.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="500" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-lock text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Dental Sealants</h3>
+                <p class="text-slate-500 text-sm">Protective coating to prevent cavities on back teeth.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="600" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-heart-pulse text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Periodontal Assessment</h3>
+                <p class="text-slate-500 text-sm">Evaluation of gum health and periodontal disease risk.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="700" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-utensils text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Nutritional Counseling</h3>
+                <p class="text-slate-500 text-sm">Advice on diet and lifestyle choices for optimal dental health.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Patient Testimonies</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="fade-right" class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-300 mb-6">"Payal's attention to detail and gentle approach made me feel completely comfortable. The professional quality of care was exceptional!"</p>
+                    <p class="font-bold">— Sarah J.</p>
+                </div>
+                <div data-aos="fade-up" class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-300 mb-6">"The best $35 I've spent. It takes a little longer because she's a student, but the care is top-notch."</p>
+                    <p class="font-bold">— Michael R.</p>
+                </div>
+                <div data-aos="fade-left" class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-300 mb-6">"Felt very safe knowing a licensed dentist was supervising the whole process. Highly recommend!"</p>
+                    <p class="font-bold">— Emily L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        <div data-aos="fade-right">
+            <h2 class="text-4xl font-bold mb-6">Visit the Clinic</h2>
+            <p class="text-slate-500 mb-8">Appointments are held at the NOVA Medical Education Campus. Please plan for 3-4 hours per visit as we ensure maximum precision.</p>
+            
+            <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-100">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold">M</div>
+                    <div><p class="font-bold">Mondays</p><p class="text-sm text-slate-500">9:00 AM – 12:00 PM <br> 1:00 PM – 4:00 PM</p></div>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-100">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold">T</div>
+                    <div><p class="font-bold">Thursdays</p><p class="text-sm text-slate-500">9:00 AM – 11:30 AM</p></div>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps/search/6699+Springfield+Center+DR,+Springfield,+VA+22150" target="_blank" rel="noopener noreferrer" class="bg-red-50 p-6 rounded-2xl border border-red-100 flex gap-4 hover:bg-red-100 transition-colors cursor-pointer group">
+                <i class="fas fa-location-dot text-red-500 mt-1"></i>
+                <div>
+                    <p class="text-sm text-red-800"><strong>NOVA Medical Education Campus</strong><br>6699 Springfield Center DR, Springfield, VA 22150</p>
+                    <p class="text-xs text-red-600 mt-2 font-semibold group-hover:text-red-700 transition-colors">📍 Click for directions →</p>
+                </div>
+            </a>
+        </div>
+
+        <div data-aos="fade-left" class="bg-white p-10 rounded-[3rem] shadow-2xl border border-slate-100 text-center relative overflow-hidden">
+            <div class="flex justify-center mb-8">
+                <img src="Payal proile pic.JPG" alt="Payal Bhalodia" class="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-blue-100">
+            </div>
+            <div class="relative z-10">
+                <h3 class="text-2xl font-bold mb-2">Ready to smile?</h3>
+                <p class="text-slate-500 mb-8">Text or call to secure your spot.</p>
+                <div class="space-y-4">
+                    <a href="tel:7038264835" class="block w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                        <i class="fas fa-phone mr-2"></i> 703-826-4835
+                    </a>
+                    <a href="sms:7038264835" class="block w-full bg-slate-900 text-white py-5 rounded-2xl font-bold text-xl hover:bg-slate-800 transition-colors">
+                        <i class="fas fa-comment mr-2"></i> Text Me
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm border-t border-slate-200">
+        <p>© 2026 Payal Bhalodia Dental Hygiene Services. Supervised by licensed faculty dentists.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-quart'
+        });
+    </script>
+</body>
+</html>
