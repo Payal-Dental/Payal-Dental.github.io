@@ -44,6 +44,190 @@
             from { transform: translate(0, 0); }
             to { transform: translate(100px, 100px); }
         }
+
+        /* ===== MOBILE RESPONSIVE STYLES (Screens < 600px) ===== */
+        @media (max-width: 599px) {
+            /* Navigation adjustments */
+            nav {
+                py: 3;
+                px: 4;
+            }
+
+            nav .font-extrabold {
+                font-size: 1.25rem !important;
+            }
+
+            nav a {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.875rem !important;
+            }
+
+            /* Header/Hero section adjustments */
+            header {
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
+            }
+
+            header h1 {
+                font-size: 1.875rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            header p {
+                font-size: 1rem !important;
+                line-height: 1.5 !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            header .inline-block {
+                font-size: 0.75rem !important;
+                padding: 0.25rem 0.75rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Hero image adjustments */
+            header img {
+                max-width: 220px !important;
+                height: 220px !important;
+            }
+
+            /* Button adjustments */
+            .flex > a {
+                padding: 0.75rem 1.5rem !important;
+                font-size: 1rem !important;
+            }
+
+            /* Student rate section */
+            .max-w-4xl h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .max-w-4xl .text-6xl {
+                font-size: 2.5rem !important;
+            }
+
+            .max-w-4xl .text-2xl {
+                font-size: 1.25rem !important;
+            }
+
+            /* Services section */
+            #services h2 {
+                font-size: 2rem !important;
+            }
+
+            #services .text-lg {
+                font-size: 1rem !important;
+            }
+
+            /* Testimonies section */
+            .bg-slate-900 h2 {
+                font-size: 2rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .bg-slate-800 {
+                padding: 1.5rem !important;
+            }
+
+            .bg-slate-800 .italic {
+                font-size: 0.95rem !important;
+            }
+
+            /* Booking section */
+            #booking {
+                gap: 1.5rem !important;
+            }
+
+            #booking h2 {
+                font-size: 2rem !important;
+            }
+
+            #booking p {
+                font-size: 0.95rem !important;
+            }
+
+            /* Booking profile image */
+            #booking .w-32 {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            #booking .text-2xl {
+                font-size: 1.5rem !important;
+            }
+
+            /* Location card adjustments */
+            .bg-red-50 {
+                padding: 1rem !important;
+            }
+
+            .bg-red-50 .text-sm {
+                font-size: 0.8rem !important;
+            }
+
+            .bg-red-50 .text-xs {
+                font-size: 0.7rem !important;
+            }
+
+            /* Time slots */
+            .bg-white.p-4 {
+                padding: 0.75rem !important;
+            }
+
+            .bg-white .font-bold {
+                font-size: 0.95rem !important;
+            }
+
+            .bg-white .text-sm {
+                font-size: 0.8rem !important;
+            }
+
+            /* General spacing adjustments */
+            section {
+                padding: 1.5rem 1rem !important;
+            }
+
+            /* Padding adjustments */
+            .px-6 {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .px-12 {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            /* Footer */
+            footer {
+                padding: 1.5rem 1rem !important;
+                font-size: 0.75rem !important;
+            }
+        }
+
+        /* ===== TABLET ADJUSTMENTS (600px - 767px) ===== */
+        @media (min-width: 600px) and (max-width: 767px) {
+            header h1 {
+                font-size: 2.25rem !important;
+            }
+
+            header p {
+                font-size: 1.05rem !important;
+            }
+
+            #services h2 {
+                font-size: 2.25rem !important;
+            }
+
+            .bg-slate-900 h2 {
+                font-size: 2.25rem !important;
+            }
+
+            #booking h2 {
+                font-size: 2.25rem !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
